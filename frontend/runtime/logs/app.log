@@ -1,0 +1,1354 @@
+2015-04-12 23:40:47 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "status" does not exist
+LINE 1: SELECT * FROM "user" WHERE ("username"=$1) AND ("status"=$2)
+                                                        ^' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Command.php:821
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Command.php(821): PDOStatement->execute()
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/ActiveRecord.php(191): yii\db\ActiveQuery->one()
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#6 /home/byteworks/Projects/akada/common/models/User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#7 /home/byteworks/Projects/akada/common/models/LoginForm.php(73): common\models\User::findByUsername('admin')
+#8 /home/byteworks/Projects/akada/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#9 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#10 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#13 /home/byteworks/Projects/akada/common/models/LoginForm.php(58): yii\base\Model->validate()
+#14 /home/byteworks/Projects/akada/frontend/controllers/SiteController.php(80): common\models\LoginForm->login()
+#15 [internal function]: frontend\controllers\SiteController->actionLogin()
+#16 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#19 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/login', Array)
+#20 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42703]: Undefined column: 7 ERROR:  column "status" does not exist
+LINE 1: SELECT * FROM "user" WHERE ("username"=$1) AND ("status"=$2)
+                                                        ^
+The SQL being executed was: SELECT * FROM "user" WHERE ("username"='admin') AND ("status"=10)' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Command.php(836): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM "...')
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/Query.php(243): yii\db\Command->queryOne()
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/ActiveQuery.php(285): yii\db\Query->one(NULL)
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/ActiveRecord.php(191): yii\db\ActiveQuery->one()
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#6 /home/byteworks/Projects/akada/common/models/User.php(82): yii\db\BaseActiveRecord::findOne(Array)
+#7 /home/byteworks/Projects/akada/common/models/LoginForm.php(73): common\models\User::findByUsername('admin')
+#8 /home/byteworks/Projects/akada/common/models/LoginForm.php(44): common\models\LoginForm->getUser()
+#9 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#10 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#13 /home/byteworks/Projects/akada/common/models/LoginForm.php(58): yii\base\Model->validate()
+#14 /home/byteworks/Projects/akada/frontend/controllers/SiteController.php(80): common\models\LoginForm->login()
+#15 [internal function]: frontend\controllers\SiteController->actionLogin()
+#16 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#19 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/login', Array)
+#20 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42703
+    [1] => 7
+    [2] => ERROR:  column "status" does not exist
+LINE 1: SELECT * FROM "user" WHERE ("username"=$1) AND ("status"=$2)
+                                                        ^
+)
+
+2015-04-12 23:40:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'by5iUHJBLng.ZzM8NwVLKC1KOxFDN0YQO1wSHREwGwkofAUfOC5DNA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '196'
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=site%2Flogin'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53456'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '196'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428882047.3722
+    'REQUEST_TIME' => 1428882047
+]
+2015-04-13 00:28:33 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CourseController' in file: /home/byteworks/Projects/akada/frontend/controllers/CourseController.php. Namespace missing?' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contrro..')
+#1 [internal function]: spl_autoload_call('frontend\\contrro..')
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(563): class_exists('frontend\\contrro..')
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('course')
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('course/create')
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('course/create', Array)
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-04-13 00:28:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'course/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=course/create'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontoffice/index?r=course/create'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '59414'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428884913.5394
+    'REQUEST_TIME' => 1428884913
+]
+2015-04-15 07:50:42 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CourseController' in file: /home/byteworks/Projects/akada/frontend/controllers/CourseController.php. Namespace missing?' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contrro..')
+#1 [internal function]: spl_autoload_call('frontend\\contrro..')
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(563): class_exists('frontend\\contrro..')
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('course')
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('course/create')
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('course/create', Array)
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-04-15 07:50:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'course/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=course/create'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontoffice/index?r=course/create'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '38764'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429084239.3208
+    'REQUEST_TIME' => 1429084239
+]
+2015-04-15 07:52:48 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\CourseController' in file: /home/byteworks/Projects/akada/frontend/controllers/CourseController.php. Namespace missing?' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contrro..')
+#1 [internal function]: spl_autoload_call('frontend\\contrro..')
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(563): class_exists('frontend\\contrro..')
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('course')
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('course/create')
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('course/create', Array)
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2015-04-15 07:52:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'course/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=course/create'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=course/create'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39308'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429084368.3169
+    'REQUEST_TIME' => 1429084368
+]
+2015-04-15 07:55:50 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "curriculum/index".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('curriculum/inde...', Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "curriculum/index".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 07:55:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'curriculum/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course/'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=curriculum%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=curriculum%2Findex'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39970'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=course/'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429084550.7326
+    'REQUEST_TIME' => 1429084550
+]
+2015-04-15 07:56:03 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "course-sub-category/index".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('course-sub-cate...', Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "course-sub-category/index".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 07:56:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'course-sub-category/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course/'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=course-sub-category%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=course-sub-category%2Findex'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '39970'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=course/'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429084563.5439
+    'REQUEST_TIME' => 1429084563
+]
+2015-04-15 08:09:58 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\User::auth_key' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('auth_key')
+#1 /home/byteworks/Projects/akada/common/models/User.php(133): yii\db\BaseActiveRecord->__get('auth_key')
+#2 [internal function]: common\models\User->getAuthKey()
+#3 /home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant/crud/Generator.php(238): call_user_func(Array)
+#4 /home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant/crud/default/views/index.php(49): schmunk42\giiant\crud\Generator->getModelRelations(Object(common\models\User))
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(325): require('/home/byteworks...')
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/byteworks...', Array)
+#7 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/home/byteworks...', Array, Object(schmunk42\giiant\crud\Generator))
+#8 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(173): yii\gii\Generator->render('views/index.php')
+#9 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(45): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('giiant-crud')
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-04-15 08:09:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'giiant-crud'
+]
+
+$_POST = [
+    '_csrf' => 'Z2hTWWM0T2o2IQI1JnAqOiUMChhSQicCMxojFABFehsgOjQWKVsiJg=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\User'
+        'searchModelClass' => ''
+        'controllerClass' => 'frontend\\controllers\\UserController'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'viewPath' => '@frontend/views'
+        'pathPrefix' => ''
+        'indexWidgetType' => 'grid'
+        'formLayout' => 'horizontal'
+        'actionButtonClass' => 'yii\\grid\\ActionColumn'
+        'providerList' => ''
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '550'
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '43485'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '550'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429085398.2705
+    'REQUEST_TIME' => 1429085398
+]
+2015-04-15 08:22:01 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)' in /home/byteworks/Projects/akada/frontend/controllers/UserController.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-15 08:22:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46419'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086121.0324
+    'REQUEST_TIME' => 1429086121
+]
+2015-04-15 08:22:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)' in /home/byteworks/Projects/akada/frontend/controllers/UserController.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-15 08:22:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user/'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user/'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46419'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086128.1478
+    'REQUEST_TIME' => 1429086128
+]
+2015-04-15 08:22:11 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user\".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user\\'',Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "user\".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 08:22:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user\\'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course/'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user\\'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user\\'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46419'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086131.945
+    'REQUEST_TIME' => 1429086131
+]
+2015-04-15 08:22:14 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)' in /home/byteworks/Projects/akada/frontend/controllers/UserController.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-15 08:22:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user/'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user/'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46419'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086134.3121
+    'REQUEST_TIME' => 1429086134
+]
+2015-04-15 08:23:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user\".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user\\'',Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "user\".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 08:23:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user\\'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course/'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user\\'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user\\'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '46880'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086235.7064
+    'REQUEST_TIME' => 1429086235
+]
+2015-04-15 08:29:04 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';'' in /home/byteworks/Projects/akada/frontend/controllers/UserController.php:23
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-15 08:29:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=user'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '48071'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429086544.7213
+    'REQUEST_TIME' => 1429086544
+]
+2015-04-15 08:47:45 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'frontend'.' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('frontend')
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/BaseYii.php(498): yii\i18n\I18N->translate('frontend', 'ID', Array, 'en-US')
+#2 /home/byteworks/Projects/akada/common/models/base/User.php(58): yii\BaseYii::t('frontend', 'ID')
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(358): common\models\base\User->attributeLabels()
+#4 /home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant/crud/default/search.php(15): yii\gii\generators\crud\Generator->generateSearchLabels()
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(325): require('/home/byteworks...')
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/byteworks...', Array)
+#7 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/home/byteworks...', Array, Object(schmunk42\giiant\crud\Generator))
+#8 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(163): yii\gii\Generator->render('search.php')
+#9 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(45): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('giiant-crud')
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#14 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+2015-04-15 08:47:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'giiant-crud'
+]
+
+$_POST = [
+    '_csrf' => 'd0tJX0xRVGYmAhgzCRUxNjUvEB59JzwOIzk5Ei8gYRcwGS4QBj45Kg=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\User'
+        'searchModelClass' => 'common\\models\\UserSearch'
+        'controllerClass' => 'frontend\\controllers\\UserController'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'viewPath' => '@frontend/views'
+        'pathPrefix' => ''
+        'indexWidgetType' => 'grid'
+        'formLayout' => 'horizontal'
+        'actionButtonClass' => 'yii\\grid\\ActionColumn'
+        'providerList' => ''
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '578'
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '52595'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '578'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429087665.3833
+    'REQUEST_TIME' => 1429087665
+]
+2015-04-15 08:49:47 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'method_exists() expects parameter 2 to be string, array given' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Component.php:389
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'method_exists()...', '/home/byteworks...', 389, Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Component.php(389): method_exists(Object(common\models\User), Array)
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/Validator.php(189): yii\base\Component->hasMethod(Array)
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(422): yii\validators\Validator::createValidator(Array, Object(common\models\User), Array, Array)
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(386): yii\base\Model->createValidators()
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(184): yii\base\Model->getValidators()
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(694): yii\base\Model->scenarios()
+#7 /home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant/crud/default/views/_form.php(12): yii\base\Model->safeAttributes()
+#8 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(325): require('/home/byteworks...')
+#9 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/byteworks...', Array)
+#10 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/home/byteworks...', Array, Object(schmunk42\giiant\crud\Generator))
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(173): yii\gii\Generator->render('views/_form.php')
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(45): yii\gii\generators\crud\Generator->generate()
+#13 [internal function]: yii\gii\controllers\DefaultController->actionView('giiant-crud')
+#14 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#18 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2015-04-15 08:49:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'giiant-crud'
+]
+
+$_POST = [
+    '_csrf' => 'd0tJX0xRVGYmAhgzCRUxNjUvEB59JzwOIzk5Ei8gYRcwGS4QBj45Kg=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\User'
+        'searchModelClass' => 'common\\models\\UserSearch'
+        'controllerClass' => 'frontend\\controllers\\UserController'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'viewPath' => '@frontend/views'
+        'pathPrefix' => ''
+        'indexWidgetType' => 'grid'
+        'formLayout' => 'horizontal'
+        'actionButtonClass' => 'yii\\grid\\ActionColumn'
+        'providerList' => ''
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '578'
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53157'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '578'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429087787.7074
+    'REQUEST_TIME' => 1429087787
+]
+2015-04-15 08:52:32 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'method_exists() expects parameter 2 to be string, array given' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Component.php:389
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'method_exists()...', '/home/byteworks...', 389, Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Component.php(389): method_exists(Object(common\models\User), Array)
+#2 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/validators/Validator.php(189): yii\base\Component->hasMethod(Array)
+#3 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(422): yii\validators\Validator::createValidator(Array, Object(common\models\User), Array, Array)
+#4 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(386): yii\base\Model->createValidators()
+#5 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(184): yii\base\Model->getValidators()
+#6 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Model.php(694): yii\base\Model->scenarios()
+#7 /home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant/crud/default/views/_form.php(12): yii\base\Model->safeAttributes()
+#8 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(325): require('/home/byteworks...')
+#9 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/home/byteworks...', Array)
+#10 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/home/byteworks...', Array, Object(schmunk42\giiant\crud\Generator))
+#11 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(173): yii\gii\Generator->render('views/_form.php')
+#12 /home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(45): yii\gii\generators\crud\Generator->generate()
+#13 [internal function]: yii\gii\controllers\DefaultController->actionView('giiant-crud')
+#14 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#17 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#18 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#20 {main}
+2015-04-15 08:52:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'giiant-crud'
+]
+
+$_POST = [
+    '_csrf' => 'TTg2RWh6VGMccWcpLT4xMw9cbwRZDDwLGUpGCAsLYRIKalEKIhU5Lw=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\User'
+        'searchModelClass' => 'common\\models\\UserSearch'
+        'controllerClass' => 'frontend\\controllers\\UserController'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'viewPath' => '@frontend/views'
+        'pathPrefix' => ''
+        'indexWidgetType' => 'grid'
+        'formLayout' => 'horizontal'
+        'actionButtonClass' => 'yii\\grid\\ActionColumn'
+        'providerList' => ''
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '578'
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53711'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=giiant-crud'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_LENGTH' => '578'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429087952.4304
+    'REQUEST_TIME' => 1429087952
+]
+2015-04-15 08:57:43 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "courseCategory".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('courseCategory', Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "courseCategory".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 08:57:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'courseCategory'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course%2Findex'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=courseCategory'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=courseCategory'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55093'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429088263.4914
+    'REQUEST_TIME' => 1429088263
+]
+2015-04-15 08:58:24 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "coursecategory".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('coursecategory', Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "coursecategory".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-15 08:58:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'coursecategory'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=course%2Findex'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=coursecategory'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=coursecategory'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55262'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429088304.9555
+    'REQUEST_TIME' => 1429088304
+]
+2015-04-15 08:59:35 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting identifier (T_STRING) or \\ (T_NS_SEPARATOR)' in /home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php:6
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-15 08:59:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'course-sub-category/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'lat918mo1riv09f3m9qg759cc6'
+    '_csrf' => 'a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:\"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL\";'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=course-sub-category%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=course-sub-category%2Findex'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55547'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/akada/frontend/web/index.php?r=course-category'
+    'HTTP_COOKIE' => 'PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429088375.6924
+    'REQUEST_TIME' => 1429088375
+]
+2015-04-18 09:16:49 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'pgsql' already loaded' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-18 09:16:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=gii'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '40504'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429348608.129
+    'REQUEST_TIME' => 1429348608
+]
+2015-04-18 09:18:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "category".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('category', Array)
+#1 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "category".' in /home/byteworks/Projects/akada/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /home/byteworks/Projects/akada/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/byteworks/Projects/akada/frontend/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-04-18 09:18:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'category'
+]
+
+$_COOKIE = [
+    '_csrf' => '8bd8d7ae621fac4456afdd8c5fbabecefe362137bd6b395e21d3b46a8840fa7bs:32:\"Y4PyT62gmv3SmCK6U5TuXucoVNgIHjP0\";'
+    'PHPSESSID' => '9qobd2smc8qafqvt0ngahutb36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/akada/frontend/web/index.php?r=curriculum%2Findex'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=category'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/akada/frontend/web/index.php'
+    'REQUEST_URI' => '/akada/frontend/web/index.php?r=category'
+    'DOCUMENT_URI' => '/akada/frontend/web/index.php'
+    'DOCUMENT_ROOT' => '/usr/share/nginx/html'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.6.2'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '40885'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'SCRIPT_FILENAME' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'PATH_INFO' => ''
+    'PATH_TRANSLATED' => '/usr/share/nginx/html/akada/frontend/web/index.php'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=8bd8d7ae621fac4456afdd8c5fbabecefe362137bd6b395e21d3b46a8840fa7bs%3A32%3A%22Y4PyT62gmv3SmCK6U5TuXucoVNgIHjP0%22%3B; PHPSESSID=9qobd2smc8qafqvt0ngahutb36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PHP_SELF' => '/akada/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1429348728.1571
+    'REQUEST_TIME' => 1429348728
+]

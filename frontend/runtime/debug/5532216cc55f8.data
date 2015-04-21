@@ -1,0 +1,331 @@
+a:8:{s:6:"config";a:5:{s:10:"phpVersion";s:17:"5.5.12-2ubuntu4.2";s:10:"yiiVersion";s:5:"2.0.1";s:11:"application";a:4:{s:3:"yii";s:5:"2.0.1";s:4:"name";s:14:"My Application";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:4:{s:7:"version";s:17:"5.5.12-2ubuntu4.2";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;}s:10:"extensions";a:7:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:62:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-swiftmailer";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:62:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-codeception";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:60:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:56:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:54:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:56:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-faker";}}s:21:"schmunk42/yii2-giiant";a:4:{s:4:"name";s:21:"schmunk42/yii2-giiant";s:7:"version";s:7:"0.2.0.0";s:5:"alias";a:1:{s:17:"@schmunk42/giiant";s:59:"/home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant";}s:9:"bootstrap";s:26:"schmunk42\giiant\Bootstrap";}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:8:{s:4:"host";s:9:"localhost";s:10:"user-agent";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0";s:6:"accept";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:15:"accept-language";s:14:"en-US,en;q=0.5";s:15:"accept-encoding";s:13:"gzip, deflate";s:7:"referer";s:63:"http://localhost/akada/frontend/web/index.php?r=subject%2Findex";s:6:"cookie";s:158:"_csrf=8bd8d7ae621fac4456afdd8c5fbabecefe362137bd6b395e21d3b46a8840fa7bs%3A32%3A%22Y4PyT62gmv3SmCK6U5TuXucoVNgIHjP0%22%3B; PHPSESSID=9qobd2smc8qafqvt0ngahutb36";s:10:"connection";s:10:"keep-alive";}s:15:"responseHeaders";a:5:{s:12:"X-Powered-By";s:21:"PHP/5.5.12-2ubuntu4.2";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:16:"curriculum/index";s:6:"action";s:56:"frontend\controllers\CurriculumController::actionIndex()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:0:{}s:6:"SERVER";a:34:{s:4:"USER";s:8:"www-data";s:4:"HOME";s:8:"/var/www";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:12:"QUERY_STRING";s:20:"r=curriculum%2Findex";s:14:"REQUEST_METHOD";s:3:"GET";s:12:"CONTENT_TYPE";s:0:"";s:14:"CONTENT_LENGTH";s:0:"";s:11:"SCRIPT_NAME";s:29:"/akada/frontend/web/index.php";s:11:"REQUEST_URI";s:50:"/akada/frontend/web/index.php?r=curriculum%2Findex";s:12:"DOCUMENT_URI";s:29:"/akada/frontend/web/index.php";s:13:"DOCUMENT_ROOT";s:21:"/usr/share/nginx/html";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_SOFTWARE";s:11:"nginx/1.6.2";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:11:"REMOTE_PORT";s:5:"40885";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_NAME";s:9:"localhost";s:15:"REDIRECT_STATUS";s:3:"200";s:15:"SCRIPT_FILENAME";s:50:"/usr/share/nginx/html/akada/frontend/web/index.php";s:9:"PATH_INFO";s:0:"";s:15:"PATH_TRANSLATED";s:50:"/usr/share/nginx/html/akada/frontend/web/index.php";s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_USER_AGENT";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.5";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:12:"HTTP_REFERER";s:63:"http://localhost/akada/frontend/web/index.php?r=subject%2Findex";s:11:"HTTP_COOKIE";s:158:"_csrf=8bd8d7ae621fac4456afdd8c5fbabecefe362137bd6b395e21d3b46a8840fa7bs%3A32%3A%22Y4PyT62gmv3SmCK6U5TuXucoVNgIHjP0%22%3B; PHPSESSID=9qobd2smc8qafqvt0ngahutb36";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:8:"PHP_SELF";s:29:"/akada/frontend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1429348716.805577;s:12:"REQUEST_TIME";i:1429348716;}s:3:"GET";a:1:{s:1:"r";s:16:"curriculum/index";}s:4:"POST";a:0:{}s:6:"COOKIE";a:2:{s:5:"_csrf";s:104:"8bd8d7ae621fac4456afdd8c5fbabecefe362137bd6b395e21d3b46a8840fa7bs:32:"Y4PyT62gmv3SmCK6U5TuXucoVNgIHjP0";";s:9:"PHPSESSID";s:26:"9qobd2smc8qafqvt0ngahutb36";}s:5:"FILES";a:0:{}s:7:"SESSION";a:2:{s:7:"__flash";a:0:{}s:11:"__returnUrl";s:50:"/akada/frontend/web/index.php?r=curriculum%2Findex";}}s:3:"log";a:1:{s:8:"messages";a:19:{i:0;a:5:{i:0;s:54:"Bootstrap with schmunk42\giiant\Bootstrap::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429348716.807164;i:4;a:0:{}}i:1;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1429348716.807179;i:4;a:0:{}}i:2;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429348716.8073111;i:4;a:0:{}}i:3;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429348716.8075521;i:4;a:0:{}}i:4;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1429348716.807591;i:4;a:0:{}}i:5;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429348716.808275;i:4;a:0:{}}i:6;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429348716.808475;i:4;a:0:{}}i:7;a:5:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1429348716.8086319;i:4;a:0:{}}i:8;a:5:{i:0;s:35:"Route requested: 'curriculum/index'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1429348716.8086669;i:4;a:0:{}}i:9;a:5:{i:0;s:30:"Route to run: curriculum/index";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1429348716.808924;i:4;a:0:{}}i:10;a:5:{i:0;s:72:"Running action: frontend\controllers\CurriculumController::actionIndex()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1429348716.809021;i:4;a:0:{}}i:11;a:5:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1429348716.8100109;i:4;a:1:{i:0;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:27;s:8:"function";s:8:"remember";s:5:"class";s:19:"yii\helpers\BaseUrl";s:4:"type";s:2:"::";}}}i:12;a:5:{i:0;s:87:"Rendering view file: /home/byteworks/Projects/akada/frontend/views/curriculum/index.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1429348716.8101909;i:4;a:1:{i:0;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:13;a:5:{i:0;s:33:"SELECT COUNT(*) FROM "curriculum"";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.813194;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1429348716.8133061;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:1956:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'curriculum'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8254809;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:675:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='curriculum'
+    and ns.nspname='public'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8330581;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:25;a:5:{i:0;s:35:"SELECT * FROM "curriculum" LIMIT 20";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8357649;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:28;a:5:{i:0;s:83:"Rendering view file: /home/byteworks/Projects/akada/frontend/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1429348716.838058;i:4;a:1:{i:0;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:9:"profiling";a:3:{s:6:"memory";i:3385592;s:4:"time";d:0.034792900085449219;s:8:"messages";a:10:{i:15;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1429348716.8133769;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1429348716.8233399;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:33:"SELECT COUNT(*) FROM "curriculum"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8234911;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:33:"SELECT COUNT(*) FROM "curriculum"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.824713;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:1956:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'curriculum'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8255939;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:1956:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'curriculum'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.832443;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:23;a:5:{i:0;s:675:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='curriculum'
+    and ns.nspname='public'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8331699;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:24;a:5:{i:0;s:675:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='curriculum'
+    and ns.nspname='public'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8350639;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:26;a:5:{i:0;s:35:"SELECT * FROM "curriculum" LIMIT 20";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.83586;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:27;a:5:{i:0;s:35:"SELECT * FROM "curriculum" LIMIT 20";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8363731;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:2:"db";a:1:{s:8:"messages";a:8:{i:17;a:5:{i:0;s:33:"SELECT COUNT(*) FROM "curriculum"";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8234911;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:33:"SELECT COUNT(*) FROM "curriculum"";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.824713;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:1956:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'curriculum'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8255939;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:1956:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'curriculum'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.832443;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:23;a:5:{i:0;s:675:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='curriculum'
+    and ns.nspname='public'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8331699;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:24;a:5:{i:0;s:675:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='curriculum'
+    and ns.nspname='public'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8350639;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:26;a:5:{i:0;s:35:"SELECT * FROM "curriculum" LIMIT 20";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.83586;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}i:27;a:5:{i:0;s:35:"SELECT * FROM "curriculum" LIMIT 20";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429348716.8363731;i:4;a:2:{i:0;a:5:{s:4:"file";s:66:"/home/byteworks/Projects/akada/frontend/views/curriculum/index.php";s:4:"line";i:87;s:8:"function";s:6:"widget";s:5:"class";s:15:"yii\base\Widget";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:76:"/home/byteworks/Projects/akada/frontend/controllers/CurriculumController.php";s:4:"line";i:31;s:8:"function";s:6:"render";s:5:"class";s:19:"yii\base\Controller";s:4:"type";s:2:"->";}}}}}s:6:"assets";a:6:{s:34:"yii\bootstrap\BootstrapPluginAsset";a:9:{s:10:"sourcePath";s:58:"/home/byteworks/Projects/akada/vendor/bower/bootstrap/dist";s:2:"js";a:1:{i:0;s:15:"js/bootstrap.js";}s:7:"depends";a:2:{i:0;s:19:"yii\web\JqueryAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:8:"basePath";s:59:"/home/byteworks/Projects/akada/frontend/web/assets/3f78fbf7";s:7:"baseUrl";s:35:"/akada/frontend/web/assets/3f78fbf7";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:55:"/home/byteworks/Projects/akada/vendor/bower/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:58:"/home/byteworks/Projects/akada/frontend/web/assets/ca3a0c7";s:7:"baseUrl";s:34:"/akada/frontend/web/assets/ca3a0c7";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:28:"yii\bootstrap\BootstrapAsset";a:9:{s:10:"sourcePath";s:58:"/home/byteworks/Projects/akada/vendor/bower/bootstrap/dist";s:3:"css";a:1:{i:0;s:17:"css/bootstrap.css";}s:8:"basePath";s:59:"/home/byteworks/Projects/akada/frontend/web/assets/3f78fbf7";s:7:"baseUrl";s:35:"/akada/frontend/web/assets/3f78fbf7";s:7:"depends";a:0:{}s:2:"js";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:22:"yii\grid\GridViewAsset";a:9:{s:10:"sourcePath";s:57:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:15:"yii.gridView.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:59:"/home/byteworks/Projects/akada/frontend/web/assets/1c27422d";s:7:"baseUrl";s:35:"/akada/frontend/web/assets/1c27422d";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:57:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:59:"/home/byteworks/Projects/akada/frontend/web/assets/1c27422d";s:7:"baseUrl";s:35:"/akada/frontend/web/assets/1c27422d";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:24:"frontend\assets\AppAsset";a:9:{s:8:"basePath";s:40:"/usr/share/nginx/html/akada/frontend/web";s:7:"baseUrl";s:19:"/akada/frontend/web";s:3:"css";a:1:{i:0;s:12:"css/site.css";}s:2:"js";a:0:{}s:7:"depends";a:2:{i:0;s:16:"yii\web\YiiAsset";i:1;s:28:"yii\bootstrap\BootstrapAsset";}s:10:"sourcePath";N;s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}s:4:"mail";a:0:{}s:7:"summary";a:9:{s:3:"tag";s:13:"5532216cc55f8";s:3:"url";s:66:"http://localhost/akada/frontend/web/index.php?r=curriculum%2Findex";s:4:"ajax";i:0;s:6:"method";s:3:"GET";s:2:"ip";s:9:"127.0.0.1";s:4:"time";i:1429348716;s:10:"statusCode";i:200;s:8:"sqlCount";i:4;s:9:"mailCount";i:0;}}

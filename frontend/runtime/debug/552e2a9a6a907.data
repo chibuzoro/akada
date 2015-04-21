@@ -1,0 +1,331 @@
+a:8:{s:6:"config";a:5:{s:10:"phpVersion";s:17:"5.5.12-2ubuntu4.2";s:10:"yiiVersion";s:5:"2.0.1";s:11:"application";a:4:{s:3:"yii";s:5:"2.0.1";s:4:"name";s:14:"My Application";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:4:{s:7:"version";s:17:"5.5.12-2ubuntu4.2";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;}s:10:"extensions";a:7:{s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:62:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-swiftmailer";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:62:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-codeception";}}s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:60:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-bootstrap";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:56:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:54:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.2.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:56:"/home/byteworks/Projects/akada/vendor/yiisoft/yii2-faker";}}s:21:"schmunk42/yii2-giiant";a:4:{s:4:"name";s:21:"schmunk42/yii2-giiant";s:7:"version";s:7:"0.2.0.0";s:5:"alias";a:1:{s:17:"@schmunk42/giiant";s:59:"/home/byteworks/Projects/akada/vendor/schmunk42/yii2-giiant";}s:9:"bootstrap";s:26:"schmunk42\giiant\Bootstrap";}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:302;s:14:"requestHeaders";a:10:{s:4:"host";s:9:"localhost";s:10:"user-agent";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0";s:6:"accept";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:15:"accept-language";s:14:"en-US,en;q=0.5";s:15:"accept-encoding";s:13:"gzip, deflate";s:7:"referer";s:76:"http://localhost/akada/frontend/web/index.php?r=course-sub-category%2Fcreate";s:6:"cookie";s:158:"PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B";s:10:"connection";s:10:"keep-alive";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:14:"content-length";s:3:"176";}s:15:"responseHeaders";a:5:{s:12:"X-Powered-By";s:21:"PHP/5.5.12-2ubuntu4.2";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:62:"no-store, no-cache, must-revalidate, post-check=0, pre-check=0";s:6:"Pragma";s:8:"no-cache";s:8:"Location";s:71:"http://localhost/akada/frontend/web/index.php?r=course-category%2Findex";}s:5:"route";s:26:"course-sub-category/create";s:6:"action";s:64:"frontend\controllers\CourseSubCategoryController::actionCreate()";s:12:"actionParams";a:0:{}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:176:"_csrf=UFYyT2FGZGcBH2MjJAIBNxIyaw5QMAwPBCRCAgI3URYXBFUAKykJKw%3D%3D&CourseSubCategory%5Bid%5D=1&CourseSubCategory%5Bdescription%5D=ICANN&CourseSubCategory%5Bcourse_category%5D=2";s:17:"Decoded to Params";a:2:{s:5:"_csrf";s:56:"UFYyT2FGZGcBH2MjJAIBNxIyaw5QMAwPBCRCAgI3URYXBFUAKykJKw==";s:17:"CourseSubCategory";a:3:{s:2:"id";s:1:"1";s:11:"description";s:5:"ICANN";s:15:"course_category";s:1:"2";}}}s:6:"SERVER";a:36:{s:4:"USER";s:8:"www-data";s:4:"HOME";s:8:"/var/www";s:9:"FCGI_ROLE";s:9:"RESPONDER";s:12:"QUERY_STRING";s:30:"r=course-sub-category%2Fcreate";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:14:"CONTENT_LENGTH";s:3:"176";s:11:"SCRIPT_NAME";s:29:"/akada/frontend/web/index.php";s:11:"REQUEST_URI";s:60:"/akada/frontend/web/index.php?r=course-sub-category%2Fcreate";s:12:"DOCUMENT_URI";s:29:"/akada/frontend/web/index.php";s:13:"DOCUMENT_ROOT";s:21:"/usr/share/nginx/html";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_SOFTWARE";s:11:"nginx/1.6.2";s:11:"REMOTE_ADDR";s:9:"127.0.0.1";s:11:"REMOTE_PORT";s:5:"57687";s:11:"SERVER_ADDR";s:9:"127.0.0.1";s:11:"SERVER_PORT";s:2:"80";s:11:"SERVER_NAME";s:9:"localhost";s:15:"REDIRECT_STATUS";s:3:"200";s:15:"SCRIPT_FILENAME";s:50:"/usr/share/nginx/html/akada/frontend/web/index.php";s:9:"PATH_INFO";s:0:"";s:15:"PATH_TRANSLATED";s:50:"/usr/share/nginx/html/akada/frontend/web/index.php";s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_USER_AGENT";s:76:"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0";s:11:"HTTP_ACCEPT";s:63:"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";s:20:"HTTP_ACCEPT_LANGUAGE";s:14:"en-US,en;q=0.5";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:12:"HTTP_REFERER";s:76:"http://localhost/akada/frontend/web/index.php?r=course-sub-category%2Fcreate";s:11:"HTTP_COOKIE";s:158:"PHPSESSID=lat918mo1riv09f3m9qg759cc6; _csrf=a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s%3A32%3A%22QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL%22%3B";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:17:"HTTP_CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:19:"HTTP_CONTENT_LENGTH";s:3:"176";s:8:"PHP_SELF";s:29:"/akada/frontend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1429088922.432317;s:12:"REQUEST_TIME";i:1429088922;}s:3:"GET";a:1:{s:1:"r";s:26:"course-sub-category/create";}s:4:"POST";a:2:{s:5:"_csrf";s:56:"UFYyT2FGZGcBH2MjJAIBNxIyaw5QMAwPBCRCAgI3URYXBFUAKykJKw==";s:17:"CourseSubCategory";a:3:{s:2:"id";s:1:"1";s:11:"description";s:5:"ICANN";s:15:"course_category";s:1:"2";}}s:6:"COOKIE";a:2:{s:9:"PHPSESSID";s:26:"lat918mo1riv09f3m9qg759cc6";s:5:"_csrf";s:104:"a7e727ed04abdcafc8f7d60647bae02e9e03a628c64c763fc24f53fd0853cbf8s:32:"QIQlEDePBdYA1vhhTrpMcq5qGRgOJomL";";}s:5:"FILES";a:0:{}s:7:"SESSION";a:2:{s:7:"__flash";a:0:{}s:11:"__returnUrl";s:55:"/akada/frontend/web/index.php?r=course-category%2Findex";}}s:3:"log";a:1:{s:8:"messages";a:17:{i:0;a:5:{i:0;s:54:"Bootstrap with schmunk42\giiant\Bootstrap::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429088922.434371;i:4;a:0:{}}i:1;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1429088922.4343951;i:4;a:0:{}}i:2;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429088922.4346001;i:4;a:0:{}}i:3;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429088922.4349689;i:4;a:0:{}}i:4;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1429088922.435029;i:4;a:0:{}}i:5;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429088922.436306;i:4;a:0:{}}i:6;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1429088922.436538;i:4;a:0:{}}i:7;a:5:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1429088922.4367759;i:4;a:0:{}}i:8;a:5:{i:0;s:45:"Route requested: 'course-sub-category/create'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1429088922.4368279;i:4;a:0:{}}i:9;a:5:{i:0;s:40:"Route to run: course-sub-category/create";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1429088922.4372251;i:4;a:0:{}}i:10;a:5:{i:0;s:80:"Running action: frontend\controllers\CourseSubCategoryController::actionCreate()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1429088922.437835;i:4;a:0:{}}i:11;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1429088922.4394801;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:1965:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'course_sub_category'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.452251;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:684:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='course_sub_category'
+    and ns.nspname='public'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.461735;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:63:"SELECT 1 FROM "course_sub_category" WHERE "description"='ICANN'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.46538;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:23;a:5:{i:0;s:97:"INSERT INTO "course_sub_category" ("id", "description", "course_category") VALUES (1, 'ICANN', 2)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1429088922.467772;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:26;a:5:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1429088922.517205;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:58;s:8:"function";s:8:"previous";s:5:"class";s:19:"yii\helpers\BaseUrl";s:4:"type";s:2:"::";}}}}}s:9:"profiling";a:3:{s:6:"memory";i:2624880;s:4:"time";d:0.085419893264770508;s:8:"messages";a:10:{i:12;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1429088922.4395881;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:13;a:5:{i:0;s:56:"Opening DB connection: pgsql:host=localhost;dbname=akada";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1429088922.4517701;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:15;a:5:{i:0;s:1965:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'course_sub_category'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4523661;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:1965:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'course_sub_category'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4611249;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:684:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='course_sub_category'
+    and ns.nspname='public'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4618311;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:684:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='course_sub_category'
+    and ns.nspname='public'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.463923;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:63:"SELECT 1 FROM "course_sub_category" WHERE "description"='ICANN'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4655321;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:63:"SELECT 1 FROM "course_sub_category" WHERE "description"='ICANN'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4673071;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:24;a:5:{i:0;s:97:"INSERT INTO "course_sub_category" ("id", "description", "course_category") VALUES (1, 'ICANN', 2)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1429088922.46784;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:25;a:5:{i:0;s:97:"INSERT INTO "course_sub_category" ("id", "description", "course_category") VALUES (1, 'ICANN', 2)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1429088922.516511;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}}}s:2:"db";a:1:{s:8:"messages";a:8:{i:15;a:5:{i:0;s:1965:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'course_sub_category'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4523661;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:1965:"SELECT
+    d.nspname AS table_schema,
+    c.relname AS table_name,
+    a.attname AS column_name,
+    t.typname AS data_type,
+    a.attlen AS character_maximum_length,
+    pg_catalog.col_description(c.oid, a.attnum) AS column_comment,
+    a.atttypmod AS modifier,
+    a.attnotnull = false AS is_nullable,
+    CAST(pg_get_expr(ad.adbin, ad.adrelid) AS varchar) AS column_default,
+    coalesce(pg_get_expr(ad.adbin, ad.adrelid) ~ 'nextval',false) AS is_autoinc,
+    array_to_string((select array_agg(enumlabel) from pg_enum where enumtypid=a.atttypid)::varchar[],',') as enum_values,
+    CASE atttypid
+         WHEN 21 /*int2*/ THEN 16
+         WHEN 23 /*int4*/ THEN 32
+         WHEN 20 /*int8*/ THEN 64
+         WHEN 1700 /*numeric*/ THEN
+              CASE WHEN atttypmod = -1
+               THEN null
+               ELSE ((atttypmod - 4) >> 16) & 65535
+               END
+         WHEN 700 /*float4*/ THEN 24 /*FLT_MANT_DIG*/
+         WHEN 701 /*float8*/ THEN 53 /*DBL_MANT_DIG*/
+         ELSE null
+      END   AS numeric_precision,
+      CASE
+        WHEN atttypid IN (21, 23, 20) THEN 0
+        WHEN atttypid IN (1700) THEN
+        CASE
+            WHEN atttypmod = -1 THEN null
+            ELSE (atttypmod - 4) & 65535
+        END
+           ELSE null
+      END AS numeric_scale,
+    CAST(
+             information_schema._pg_char_max_length(information_schema._pg_truetypid(a, t), information_schema._pg_truetypmod(a, t))
+             AS numeric
+    ) AS size,
+    a.attnum = any (ct.conkey) as is_pkey
+FROM
+    pg_class c
+    LEFT JOIN pg_attribute a ON a.attrelid = c.oid
+    LEFT JOIN pg_attrdef ad ON a.attrelid = ad.adrelid AND a.attnum = ad.adnum
+    LEFT JOIN pg_type t ON a.atttypid = t.oid
+    LEFT JOIN pg_namespace d ON d.oid = c.relnamespace
+    LEFT join pg_constraint ct on ct.conrelid=c.oid and ct.contype='p'
+WHERE
+    a.attnum > 0 and t.typname != ''
+    and c.relname = 'course_sub_category'
+    and d.nspname = 'public'
+ORDER BY
+    a.attnum;";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4611249;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:684:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='course_sub_category'
+    and ns.nspname='public'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4618311;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:684:"select
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.conrelid and attnum = any(ct.conkey)) as columns,
+    fc.relname as foreign_table_name,
+    fns.nspname as foreign_table_schema,
+    (select string_agg(attname,',') attname from pg_attribute where attrelid=ct.confrelid and attnum = any(ct.confkey)) as foreign_columns
+from
+    pg_constraint ct
+    inner join pg_class c on c.oid=ct.conrelid
+    inner join pg_namespace ns on c.relnamespace=ns.oid
+    left join pg_class fc on fc.oid=ct.confrelid
+    left join pg_namespace fns on fc.relnamespace=fns.oid
+
+where
+    ct.contype='f'
+    and c.relname='course_sub_category'
+    and ns.nspname='public'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.463923;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"load";s:5:"class";s:14:"yii\base\Model";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:63:"SELECT 1 FROM "course_sub_category" WHERE "description"='ICANN'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4655321;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:63:"SELECT 1 FROM "course_sub_category" WHERE "description"='ICANN'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1429088922.4673071;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:24;a:5:{i:0;s:97:"INSERT INTO "course_sub_category" ("id", "description", "course_category") VALUES (1, 'ICANN', 2)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1429088922.46784;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:25;a:5:{i:0;s:97:"INSERT INTO "course_sub_category" ("id", "description", "course_category") VALUES (1, 'ICANN', 2)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1429088922.516511;i:4;a:1:{i:0;a:5:{s:4:"file";s:83:"/home/byteworks/Projects/akada/frontend/controllers/CourseSubCategoryController.php";s:4:"line";i:57;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}}}s:6:"assets";a:0:{}s:4:"mail";a:0:{}s:7:"summary";a:9:{s:3:"tag";s:13:"552e2a9a6a907";s:3:"url";s:76:"http://localhost/akada/frontend/web/index.php?r=course-sub-category%2Fcreate";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:9:"127.0.0.1";s:4:"time";i:1429088922;s:10:"statusCode";i:302;s:8:"sqlCount";i:4;s:9:"mailCount";i:0;}}
