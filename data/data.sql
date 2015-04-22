@@ -1,4 +1,4 @@
-/*
+s/*
 Navicat PGSQL Data Transfer
 
 Source Server         : PostgreSQL DB
