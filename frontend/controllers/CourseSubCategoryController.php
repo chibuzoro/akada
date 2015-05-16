@@ -23,11 +23,13 @@ class CourseSubCategoryController extends Controller
 	{
 		$searchModel = new CourseSubCategorySearch;
 		$dataProvider = $searchModel->search($_GET);
+        $courses = new CourseSubCategory;
 
         Url::remember();
 		return $this->render('index', [
 			'dataProvider' => $dataProvider,
 			'searchModel' => $searchModel,
+            'courses' => $courses,
 		]);
 	}
 

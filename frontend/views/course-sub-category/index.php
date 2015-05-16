@@ -64,7 +64,7 @@ $this->params['breadcrumbs'][] = $this->title;
         
 			'id',
 			'description',
-			'course_category',
+            'course_category' => 'courseCategory.description',
             [
                 'class' => 'yii\grid\ActionColumn',
                 'urlCreator' => function($action, $model, $key, $index) {

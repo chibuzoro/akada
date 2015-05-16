@@ -1,51 +1,51 @@
 <?php
+use yii\helpers\Html;
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+
+$this->title = 'Akada';
+
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+<div class="home-top flxac">
+    <div class="home-top-splash">
 
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+        <h1 class="heading light">Learn the right skills for your next Job.</h1>
+        <?= Html::beginForm(['course/index'], 'post', ['class' => 'form mt20 pos-r flxac']) ?>
+        <div class="search-input-container fx">
+            <?= Html::textInput('search-course', null, [
+                'placeholder' => 'what would you like to learn today?',
+                'type' => 'search',
+                'class' => 'search-field form-control quick-search ui-autocomplete-input'
+            ]) ?>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        <?= Html::submitButton("<i class='fa fa-search'></i>", ['class' => 'home-search-btn']) ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+        <?= Html::endForm() ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+        <div class="search-tips">
+            Search for online professional courses on ICAN, OrcaFlex, CFA, or anything else.
         </div>
-
+        <ul class="fxjc features">
+            <li class="flxac">
+                <i class="fa fa-group"></i>
+                <span>Growing number of students.</span>
+            </li>
+            <li class="flxac">
+                <i class="fa fa-rocket"></i>
+                <span>Unique courses found nowhere else!</span>
+            </li>
+            <li class="flxac">
+                <i class="fa fa-mobile"></i>
+                <span>Learn from anywhere,with any device at your convenience.</span>
+            </li>
+        </ul>
     </div>
+
 </div>
+
+
+
+

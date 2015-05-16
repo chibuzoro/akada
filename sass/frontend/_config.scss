@@ -1,0 +1,30 @@
+$black: #353535;
+$white: #fff;
+$patina: #699;
+$pale-sky: #6b717f;
+$regent-grey: #808c99;
+$midnight-blue: #036;
+$nebula: #d2e1dd;
+$iron: #dadbdf;
+$purple: #4d4a75;
+$green: #379040;
+$color-primary: $purple;
+$color-hover-menu: $green;
+$color-text-menu: $white;
+$color-text: darken($pale-sky, 15);
+$color-shadow: rgba($black, .123);
+$color-background: $white;
+$color-background-shade: $iron;
+$color-background-invert: $black;
+$color-text-heading: $regent-grey;
+$color-text-invert: rgba($color-background, .75);
+$font-stack: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/** mixins **/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

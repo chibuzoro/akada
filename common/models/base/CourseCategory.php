@@ -28,8 +28,7 @@ class CourseCategory extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'description'], 'required'],
-            [['id'], 'integer'],
+            [['description'], 'required'],
             [['description'], 'string', 'max' => 128],
             [['description'], 'unique']
         ];

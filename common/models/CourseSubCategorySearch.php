@@ -18,8 +18,8 @@ class CourseSubCategorySearch extends Model
 	public function rules()
 	{
 		return [
-			[['id', 'course_category'], 'integer'],
-			[['description'], 'safe'],
+            [['id'], 'integer'],
+            [['description', 'course_category'], 'safe'],
 		];
 	}
 

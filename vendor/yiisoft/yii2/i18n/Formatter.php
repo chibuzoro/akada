@@ -35,6 +35,9 @@ use yii\helpers\Html;
  * the [PHP intl extension](http://php.net/manual/en/book.intl.php) has to be installed.
  * Most of the methods however work also if the PHP intl extension is not installed by providing
  * a fallback implementation. Without intl month and day names are in English only.
+ * Note that even if the intl extension is installed, formatting date and time values for years >=2038 or <=1901
+ * on 32bit systems will fall back to the PHP implementation because intl uses a 32bit UNIX timestamp internally.
+ * On a 64bit system the intl formatter is used in all cases if installed.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @author Enrica Ruedin <e.ruedin@guggach.com>
@@ -119,7 +122,7 @@ class Formatter extends Component
      */
     public $timeFormat = 'medium';
     /**
-     * @var string the default format string to be used to format a [[asDateTime()|date and time]].
+     * @var string the default format string to be used to format a [[asDatetime()|date and time]].
      * This can be "short", "medium", "long", or "full", which represents a preset format of different lengths.
      *
      * It can also be a custom format as specified in the [ICU manual](http://userguide.icu-project.org/formatparse/datetime#TOC-Date-Time-Format-Syntax).
@@ -543,7 +546,9 @@ class Formatter extends Component
             return $this->nullDisplay;
         }
 
-        if ($this->_intlLoaded) {
+        // intl does not work with dates >=2038 or <=1901 on 32bit machines, fall back to PHP
+        $year = $timestamp->format('Y');
+        if ($this->_intlLoaded && !(PHP_INT_SIZE == 4 && ($year <= 1901 || $year >= 2038))) {
             if (strncmp($format, 'php:', 4) === 0) {
                 $format = FormatConverter::convertDatePhpToIcu(substr($format, 4));
             }

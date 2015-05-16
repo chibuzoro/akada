@@ -7,13 +7,20 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'yii\\swiftmailer\\' => array($vendorDir . '/yiisoft/yii2-swiftmailer'),
+    'yii\\jui\\' => array($vendorDir . '/yiisoft/yii2-jui'),
+    'yii\\imagine\\' => array($vendorDir . '/yiisoft/yii2-imagine'),
     'yii\\gii\\' => array($vendorDir . '/yiisoft/yii2-gii'),
     'yii\\faker\\' => array($vendorDir . '/yiisoft/yii2-faker'),
+    'yii\\elasticsearch\\' => array($vendorDir . '/yiisoft/yii2-elasticsearch'),
     'yii\\debug\\' => array($vendorDir . '/yiisoft/yii2-debug'),
     'yii\\composer\\' => array($vendorDir . '/yiisoft/yii2-composer'),
     'yii\\codeception\\' => array($vendorDir . '/yiisoft/yii2-codeception'),
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
+    'yii\\authclient\\' => array($vendorDir . '/yiisoft/yii2-authclient'),
+    'yii\\apidoc\\' => array($vendorDir . '/yiisoft/yii2-apidoc'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'schmunk42\\giiant\\' => array($vendorDir . '/schmunk42/yii2-giiant'),
+    'cebe\\markdown\\latex\\' => array($vendorDir . '/cebe/markdown-latex'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'cebe\\jssearch\\' => array($vendorDir . '/cebe/js-search/lib'),
 );
